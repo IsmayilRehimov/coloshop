@@ -1,0 +1,224 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.bigPic1 {
+    height: 600px;
+    width: 100%;
+    padding: 150px 100px;
+    background-image: url(https://preview.colorlib.com/theme/coloshop/images/slider_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    p{
+        font-weight: bold;
+    }
+
+    h1{
+        zoom: 200%;    
+    }
+
+    button{
+        height: 40px;
+        width: 120px;
+        background-color: #ff4950;
+        border-radius: 5px;
+        border: none;
+        color: white;
+    }
+
+}
+
+.midPics{
+    width: 100%;
+    padding: 0 100px;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.midPic{
+    height: 250px;
+    width: 400px;
+    background-image: url(https://preview.colorlib.com/theme/coloshop/images/banner_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+    h2{
+        padding: 15px;
+        background-color: white;
+    }
+}
+
+
+.midText{
+    margin-top: 50px;
+    
+    h1{
+        zoom: 130%;
+    }
+}
+
+.midButtons{
+    margin-top: 50px;
+
+    button{
+        height: 40px;
+        width: 120px;
+        font-weight: bold;
+        border: 0.1px solid #afb2ca;
+    }
+}
+
+.datas{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+
+    
+}
+
+.getBtn{
+    height: 40px;
+    width: 100px;
+    background-color: #ff4950;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+.bigPic2{
+    height: 500px;
+    width: 100%;
+    padding: 100px 100px;
+    background-color: #f2f2f2;
+    background-image: url(https://preview.colorlib.com/theme/coloshop/images/deal_ofthe_week.png);
+    background-position: 20% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 50px;
+
+    h1{
+        zoom: 150%;    
+    }
+
+}
+
+.bigPic2Div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    button{
+        height: 40px;
+        width: 120px;
+        background-color: #1e1e26;
+        border-radius: 5px;
+        border: none;
+        color: white;
+    }
+}
+
+.timer{
+    display: flex;
+    gap: 20px;
+}
+
+.timerDiv{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        zoom: 150%;
+        color: #ff4950;
+    }
+}
+
+.basicPic{
+    height: 250px;
+    width: 400px;
+}
+
+.newsletter{
+    margin-top: 100px;
+    width: 100%;
+    height: 120px;
+    padding: 0 100px;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input{
+        width: 250px;
+        height: 40px;
+        padding: 10px;
+        border: none;
+
+    }
+
+    button{
+        height: 40px;
+        width: 150px;
+        background-color: #ff4950;
+        color: white;
+        border: none;
+    }
+}
+
+.footer1{
+    height: 100px;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+
+    
+}
+
+.footer1Left{  
+    display: flex;
+    align-items: center;
+    gap: 50px;
+       
+}
+
+.footer1Right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer2{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 100px;
+}

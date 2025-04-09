@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+}
+
+.top{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background-color: #1e1e26;
+    color: #afb2ca;
+    font-size: small;
+}
+
+.topRight{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar{
+    height: 100px;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: small;
+    }
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+
+    i{
+        font-size: larger;
+    }
+}
