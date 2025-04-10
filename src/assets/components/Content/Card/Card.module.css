@@ -1,14 +1,15 @@
-.card{
+.card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
-    width: 200px;
+    height: 450px;
+    width: 250px;
     gap: 15px;
-
-    p{
-        margin-top: 5px;
-    }
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+    background-color: white; 
+    flex: 0 0 auto;
     
 }
 
@@ -24,20 +25,37 @@
 }
 
 .cardText{
-    height: 30%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.cardBtn{
+.cardText span, .cardText p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
-    button{
-        width: 100%;
-        height: 40px;    
-        background-color: #ff4950;
-        color: white;
-        border: none;
-        font-weight: bold;
-    }
+
+.cardBtn {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .cardBtn {
+    opacity: 1;
+}
+
+.cardBtn button {
+    width: 100%;
+    height: 40px;    
+    background-color: #ff4950;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

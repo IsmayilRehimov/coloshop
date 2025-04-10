@@ -1,4 +1,4 @@
-import React, { useState } from 'react' // useState-i düzgün import etdim
+import React, { useEffect, useState } from 'react' 
 import styles from './Content.module.css'
 import Card from './Card/Card'
 import axios from 'axios'
@@ -6,15 +6,19 @@ import axios from 'axios'
 
 const Content = () => {
 
-    const [data, setData] = useState([]) // useState artıq düzgün import edilib
+    const [data, setData] = useState([]) 
 
+    useEffect(() => {
+        const getData = () => {
+            axios.get('https://fakestoreapi.com/products')
+            .then(res => {
+              setData(res.data)
+            })
+          }
+          getData();
+      }, []);
 
-  const getData = () => {
-    axios.get('https://fakestoreapi.com/products')
-    .then(res => {
-      setData(res.data)
-    })
-  }
+  
 
   return (
     <div className={styles.container}>
@@ -47,8 +51,7 @@ const Content = () => {
             <button>Men's</button>
         </div>
         
-        <div className={styles.datas}>
-            <button className={styles.getBtn} onClick={() => getData()}>Get Data</button>
+        <div className={styles.datas1}>
             {data && data.map(item => <Card key={item.id} item={item}/>)}
         </div>
 
@@ -75,6 +78,14 @@ const Content = () => {
             </div>
             <button>SHOP NOW</button>
             </div>
+        </div>
+
+        <div className={styles.midText}>
+            <h1>Best Sellers</h1>
+        </div>
+
+        <div className={styles.datas2}>
+            {data && data.map(item => <Card key={item.id} item={item}/>)}
         </div>
 
         <div className={styles.cargo}>

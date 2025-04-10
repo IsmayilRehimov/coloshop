@@ -83,13 +83,29 @@
     }
 }
 
-.datas{
+.datas1{
     width: 100%;
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    
+}
+
+.datas2{
+    
+        width: 100%;
+        padding: 40px 20px; 
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        scroll-behavior: smooth;
     
 }
 
