@@ -77,6 +77,37 @@ const Content = () => {
             </div>
         </div>
 
+        <div className={styles.cargo}>
+            <div className={styles.cargoDiv}>
+                <i class="bi bi-truck"></i>
+                <div className="cargoText">
+                    <h4>FREE SHIPPING</h4>
+                    <p>Suffered Alteration in Some Form</p>
+                </div>
+            </div>
+            <div className={styles.cargoDiv}>
+                <i class="bi bi-cash"></i>
+                <div className="cargoText">
+                    <h4>CACH ON DELIVERY</h4>
+                    <p>The Internet Tend To Repeat</p>
+                </div>
+            </div>
+            <div className={styles.cargoDiv}>
+                <i class="bi bi-arrow-repeat"></i>
+                <div className="cargoText">
+                    <h4>45 DAYS RETURN</h4>
+                    <p>Making it Look Like Readable</p>
+                </div>
+            </div>
+            <div className={styles.cargoDiv}>
+                <i class="bi bi-clock"></i>
+                <div className="cargoText">
+                    <h4>OPENING ALL WEEK</h4>
+                    <p>8AM - 09PM</p>
+                </div>
+            </div>
+        </div>
+
         <div className={styles.midText}>
             <h1>Latest Blogs</h1>
         </div>
